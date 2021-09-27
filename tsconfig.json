@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "esNext",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "strict": true,
+    "sourceMap": true,
+    "target": "esNext",
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "outDir": "dist",
+    "baseUrl": "src",
+    "typeRoots": [
+      "./types",
+      "node_modules/@types"
+    ],
+    "strictNullChecks": false,
+    "allowJs": true,
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
