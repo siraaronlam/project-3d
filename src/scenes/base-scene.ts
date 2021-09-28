@@ -9,7 +9,6 @@ export interface IBaseScene {
   disposeAllEntityResources(): void;
 }
 
-// TO-DO: extract some of this to Scene-01 and make this more basic
 export abstract class BaseScene implements IBaseScene{
 
   protected entities: BaseEntity[] = [];
@@ -37,6 +36,9 @@ export abstract class BaseScene implements IBaseScene{
     this.entities.forEach((entity) => entity.update());
   }
 
+  // TO-DO:
+  // - potentially have wrapping classes override this method
+  // - implement this method to call updateAllEntities() so wrapping classes do not have to
   public abstract update(): void
 
   public animate() {

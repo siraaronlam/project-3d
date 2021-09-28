@@ -18,6 +18,7 @@ export class ExampleSceneCube extends BaseScene {
     this.addEntityToScene(cube);
   }
 
+  // TO-DO: potentially override from BaseScene
   public update() {
     this.updateAllEntities();
   }

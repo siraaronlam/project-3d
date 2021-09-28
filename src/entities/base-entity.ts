@@ -6,7 +6,6 @@ export interface IBaseEntity {
   disposeEntityResources(): void;
 }
 
-// TO-DO: extract some of this to Scene-01 and make this more basic
 export abstract class BaseEntity implements IBaseEntity {
   protected mesh: Mesh;
 
