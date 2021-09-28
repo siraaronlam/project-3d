@@ -1,0 +1,26 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.layout {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.layout button {
+  width: 8rem;
+  height: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  background-color:rgb(114, 216, 250);
+  border: none;
+  color: black;
+  margin-right: 0.5rem;
+}

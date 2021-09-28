@@ -1,6 +1,7 @@
 import React, { Component as ReactComponent } from 'react';
 import { ExampleSceneCube } from '../scenes/example-scenes/example-scene-cube';
 import { ExampleSceneCone } from '../scenes/example-scenes/example-scene-cone';
+import './app.css';
 
 export default class App extends ReactComponent {
   private canvasRef: React.RefObject<HTMLCanvasElement>;
@@ -41,10 +42,12 @@ export default class App extends ReactComponent {
 
   render() {
     return (
-      <div>
-        <button onClick={ this.onShowCube }>Cube</button>
-        <button onClick={ this.onShowCone }>Cone</button>
+      <div className="main">
         <canvas ref={ this.canvasRef } id="game-canvas" />
+        <div className="layout">
+          <button onClick={ this.onShowCube }>Cube</button>
+          <button onClick={ this.onShowCone }>Cone</button>
+        </div>
       </div>
     );
   }
